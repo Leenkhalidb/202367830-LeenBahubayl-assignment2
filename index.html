@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Portfolio</title>
+
+
+<!-- CSS File -->
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<header>
+
+<nav class="navbar">
+
+<h2>My Portfolio</h2>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<h1>Hello, I'm Leen Bahubayl </h1>
+
+<p>Aspiring Software Engineering Student</p>
+
+<button id="themeBtn">Dark Mode</button>
+
+</section>
+
+<!-- About Me Section -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+
+<p>
+
+I am a student interested in software engineering and technology.
+
+I enjoy learning programming languages and building
+
+responsive and user-friendly websites.
+
+</p>
+
+</section>
+
+<!-- Projects Section -->
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="web">Web</button>
+    <button class="filter-btn" data-category="javascript">JavaScript</button>
+  </div>
+
+  <div class="project-card" data-category="web">
+    <img src="https://placehold.co/600x350?text=Project+One"
+      alt="Placeholder image for Project One">
+
+    <h3>Project One</h3>
+    <p>A simple website created using HTML and CSS.</p>
+  </div>
+
+  <div class="project-card" data-category="javascript">
+    <img src="https://placehold.co/600x350?text=Project+Two"
+      alt="Placeholder image for Project Two">
+
+    <h3>Project Two</h3>
+    <p>A responsive website with JavaScript features.</p>
+  </div>
+
+  <p id="empty-message" class="hidden">No projects found.</p>
+</section>
+
+<!-- Contact Section -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm" action="#" method="post">
+
+<label for="name">Name:</label>
+
+<input type="text" id="name" required>
+
+<label for="email">Email:</label>
+
+<input type="email" id="email" required>
+
+<label for="message">Message:</label>
+
+<textarea id="message" rows="5" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Leen Bahubayl. All Rights Reserved.</p>
+
+</footer>
+
+<!-- JavaScript File -->
+
+<script src="js/script.js"></script>
+</body>
+</html>
