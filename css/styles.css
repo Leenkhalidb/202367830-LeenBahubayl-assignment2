@@ -195,14 +195,19 @@ footer {
 #formMessage {
   margin-top: 1rem;
   font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 5px;
 }
 
 #formMessage.error {
   color: #d32f2f;
+  background-color: #ffe5e5;
+  
 }
 
 #formMessage.success {
   color: #2e7d32;
+  background-color: #e3f7e8;
 }
 /* Tablet and mobile layout */
 @media (max-width: 768px) {
