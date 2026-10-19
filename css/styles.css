@@ -200,13 +200,13 @@ footer {
 }
 
 #formMessage.error {
-  color: #d32f2f;
+  color: #ff5757;
   background-color: #ffe5e5;
   
 }
 
 #formMessage.success {
-  color: #2e7d32;
+  color: #99f89e;
   background-color: #e3f7e8;
 }
 /* Tablet and mobile layout */
