@@ -1,6 +1,5 @@
 const themeButton = document.getElementById("themeBtn");
 
-// Load the saved theme when the page opens
 const savedTheme = localStorage.getItem("theme");
 
 if (savedTheme === "dark") {
@@ -10,7 +9,6 @@ if (savedTheme === "dark") {
   themeButton.textContent = "Dark Mode";
 }
 
-// Change and save the theme when the button is clicked
 themeButton.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
 
@@ -47,7 +45,8 @@ contactForm.addEventListener("submit", function (event) {
     return;
   }
 
-  formMessage.textContent = "Thank you! Your message was submitted successfully.";
+  formMessage.textContent =
+    "Thank you! Your message was submitted successfully.";
   formMessage.className = "success";
 
   contactForm.reset();
