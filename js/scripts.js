@@ -24,11 +24,32 @@ themeButton.addEventListener("click", function () {
 });
 
 const contactForm = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
 
 contactForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  alert("Thank you for contacting me!");
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (name === "" || email === "" || message === "") {
+    formMessage.textContent = "Please complete all fields.";
+    formMessage.className = "error";
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(email)) {
+    formMessage.textContent = "Please enter a valid email address.";
+    formMessage.className = "error";
+    return;
+  }
+
+  formMessage.textContent = "Thank you! Your message was submitted successfully.";
+  formMessage.className = "success";
+
   contactForm.reset();
 });
 

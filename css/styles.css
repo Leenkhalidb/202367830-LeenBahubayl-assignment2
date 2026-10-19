@@ -192,6 +192,18 @@ footer {
   background-color: #292929;
 }
 
+#formMessage {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#formMessage.error {
+  color: #d32f2f;
+}
+
+#formMessage.success {
+  color: #2e7d32;
+}
 /* Tablet and mobile layout */
 @media (max-width: 768px) {
   .navbar {
